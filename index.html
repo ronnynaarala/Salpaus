@@ -12,18 +12,36 @@
         <li style="display:inline-block;">
           <a class="ex2" href="portfolio.html" style="text-decoration:none; color:#2a7d4a;"><strong>Portfolio</strong></a>
         </li>
+        <br>
       </ul>
-      <p class="p1">
+      <button 
+        onclick="document.getElementById('l').style.color='green'"
+        >Vihreä homer teksti
+      </button>
+      <p class="p1" id="l">
         Iha ok, mut ootko kattonu simpsonit sarjasta jakson himo läski homer :D<br> 
         Siinä esiintyy koko simpsonit perhe eli myös bart simpsons homer poika fanit
         saavat nauraa ja naurattaahan se tietty myös vaikka homerin läski kuteet ja muut :D<br>
         Kannattaa kattoo nopee.
       </p>
+      <script id="moi">
+      function MoiFunktio(){
+        document.getElementById("l").innerHTML = "Moi"; //muuttaa Homer tekstin sanaksi "Moi"
+      }
+      </script>
+      <button
+        type="button" onclick="MoiFunktio()">Moi nappi
+      </button>
     <h2>Laadukkaita vastauksia :D :D</h2>
       <p class="p2">
         -Tyhjä tagi ei tarvitse end tagiä, mutta esim head tai body tarvitsevat /head tai /body end tagiksi.
         <br>
         -Case sensitive (merkkikokoriippuvainen) tarkoittaa, että isot ja pienet kirjaimet eivät ole sama. esim. Salasanat ovat case sensitive.
+        <br>
+        -var, let ja const eroavat toisistaan siten;<br>
+        <strong>var:</strong> muuttujalla voi olla monta arvoa<br>
+        <strong>let:</strong> muuttujalla on vain 1 arvo, jonka voi muuttaa<br>
+        <strong>const:</strong> muuttujalla on 1 arvo, jota ei voi muuttaa
       </p>
     <h4>Tosi hieno kuva homerista</h4>
       <img src="homer_20.jpg" alt="Iso homer :D">
